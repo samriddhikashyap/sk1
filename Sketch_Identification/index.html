@@ -1,0 +1,244 @@
+
+      
+<html>
+  <head>
+    <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="container">
+      <h2 class="object" data-value="3">CASE<br><span>STUDY</span></h2>
+      <img src="1.png" class="object" data-value="-2" alt="">
+      <img src="2.png" class="object" data-value="6" alt="">
+      <img src="3.png" class="object" data-value="4" alt="">
+      <img src="4.png" class="object" data-value="-6" alt="">
+      <img src="5.png" class="object" data-value="8" alt="">
+      <img src="6.png" class="object" data-value="-4" alt="">
+      <img src="7.png" class="object" data-value="5" alt="">
+      <img src="8.png" class="object" data-value="-9" alt="">
+      <img src="9.png" class="object" data-value="-5" alt="">
+    </div>
+
+    <script type="text/javascript">
+    document.addEventListener("mousemove", parallax);
+    function parallax(e){
+      document.querySelectorAll(".object").forEach(function(move){
+
+        var moving_value = move.getAttribute("data-value");
+        var x = (e.clientX * moving_value) / 250;
+        var y = (e.clientY * moving_value) / 250;
+
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+      });
+    }
+
+
+      
+    </script>
+   
+
+  <center>
+        <div>
+          <h1 class="neon">GOOGLE LENS</h1>
+      <h2 class="neon2">VS</h2>
+      <h1 class="neon3">Mobilenet</h1>
+      
+        <ol>
+          <div class="test_image_and_result1 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="white1">Test Image - </b>
+              <img class="img" src="https://i.pinimg.com/736x/3d/43/da/3d43dadc5d4a6018a43db18a988569b4.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+              Output on <b>GOOGLE LENS</b> - Bear Thermo Bottle
+              <span> </span>
+            </h5>
+            <h5 class="second col-sm-4 col-xs-12">
+              Output on <b>Mobilenet Model </b> - ipod
+              <span> </span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+              <h4>Result - </h4>
+              <hr>
+              <h4>Hence , Google lens is more accurate </h4>
+            </div>
+          </div>
+          <div class="test_image_and_result2 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="white2">Test Image - </b>
+              <img class="img" src="https://i.pinimg.com/474x/7b/6b/86/7b6b86ac143e84c91c6a64824c189fc4.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+              Output on <b>GOOGLE LENS</b> - Elastic Braided Apple Watch
+              <span> </span>
+            </h5>
+            <h5 class="second col-sm-4 col-xs-12">
+              Output on <b>Mobilenet Model </b> - Car Mirror 
+              <span> </span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+              <h4>Result - </h4>
+              <hr>
+              <h4>Hence , Google lens is more accurate </h4>
+            </div>
+          </div>
+          <div class="test_image_and_result3 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="white3">Test Image - </b>
+              <img class="img" src="https://i.pinimg.com/originals/ca/ab/59/caab59758e65b7176755b1679bc12360.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+              Output on <b>GOOGLE LENS</b> - Wide Teeth Hair Comb
+              <span> </span>
+            </h5>
+            <h5 class="second col-sm-4 col-xs-12">
+              Output on <b>Mobilenet Model </b> - Modem
+              <span> </span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+              <h4>Result - </h4>
+              <hr>
+              <h4>Hence , Google lens is more accurate </h4>
+            </div>
+          </div>
+          <div class="test_image_and_result4 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="white4">Test Image - </b>
+              <img class="img" src="https://i.pinimg.com/originals/99/1e/29/991e29ddddcdac201da771460ed20a78.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+              Output on <b>GOOGLE LENS</b> - Apple
+              <span> </span>
+            </h5>
+            <h5 class="second col-sm-4 col-xs-12">
+              Output on <b>Mobilenet Model </b> - Apple
+              <span> </span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+              <h4>Result - </h4>
+              <hr>
+              <h4> Draw</h4>
+            </div>
+          </div>
+          <div class="test_image_and_result5 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="white5">Test Image - </b>
+              <img class="img" src="https://i.etsystatic.com/22410359/r/il/6843b5/3962234338/il_fullxfull.3962234338_slor.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+              Output on <b>GOOGLE LENS</b> - Aesthetic Scissors
+              <span> </span>
+            </h5>
+            <h5 class="second col-sm-4 col-xs-12">
+              Output on <b>Mobilenet Model </b> - stethoscope
+              <span> </span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+              <h4>Result - </h4>
+              <hr>
+              <h4>Hence , Google lens is more accurate </h4>
+            </div>
+          </div>
+          <div class="test_image_and_result6 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="white6">Test Image - </b>
+              <img class="img" src="https://i.pinimg.com/736x/3e/95/a8/3e95a8ef83c449a776fe25937a6cbe56.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+              Output on <b>GOOGLE LENS</b> - Apple MAC PRO
+              <span> </span>
+            </h5>
+            <h5 class="second col-sm-4 col-xs-12">
+              Output on <b>Mobilenet Model </b> - seat belt , seatbelt
+              <span> </span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+              <h4>Result - </h4>
+              <hr>
+              <h4> Hence , Google lens is more accurate</h4>
+            </div>
+          </div>
+          <div class="test_image_and_result7 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="white7">Test Image - </b>
+              <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtMbffoMVj1388DAxiXAh9TERZNZub-yJom43dajbPsJU6k6Jn_qz0Qvl1p2F7Diiap7w&usqp=CAU">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+              Output on <b>GOOGLE LENS</b> - Banana
+              <span> </span>
+            </h5>
+            <h5 class="second col-sm-4 col-xs-12">
+              Output on <b>Mobilenet Model </b> - light,spotlight
+              <span> </span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+              <h4>Result - </h4>
+              <hr>
+              <h4>Hence , Google lens is more accurate </h4>
+            </div>
+          </div>
+          <div class="test_image_and_result8 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="white8">Test Image - </b>
+              <img class="img" src="https://i.pinimg.com/736x/fc/9d/4e/fc9d4e38df0cf709ee44034c888e30a3.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+              Output on <b>GOOGLE LENS</b> - coco flap bag
+              <span> </span>
+            </h5>
+            <h5 class="second col-sm-4 col-xs-12">
+              Output on <b>Mobilenet Model </b> - purse
+              <span> </span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+              <h4>Result - draw</h4>
+              <hr>
+              <h4> draw(coco flap bag is also a purse)</h4>
+            </div>
+          </div>
+          <div class="test_image_and_result9 col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+              <b class="white9">Test Image - </b>
+              <img class="img" src="https://m.media-amazon.com/images/I/61e9cPBz4uL._SX569_.jpg">
+            </li>
+            <h5 class="first col-sm-4 col-xs-12">
+              Output on <b>GOOGLE LENS</b> - Dracaena trifaciata(plant)
+              <span> </span>
+            </h5>
+            <h5 class="second col-sm-4 col-xs-12">
+              Output on <b>Mobilenet Model </b> - windsor tie 
+              <span> </span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+              <h4>Result - </h4>
+              <hr>
+              <h4> Hence , Google lens is more accurate </h4>
+            </div>
+          </div>
+        </ol>
+        <div>
+       
+         
+          <h6 class="bottom1">
+            I Have Tested 9 Images <b>GOOGLE LENS</b> Have Predicted 9 Of Them More Accurately And <b>MOBILE NET</b> Was Less Accurately So According To My Case Study <b>GOOGLE LENS</b> Is More Accurate.
+          </h6>
+          <br><br>
+    </center>
+    <p class="bottom">Developed by - Samriddhi.K</p>
+  </body>
+</html>

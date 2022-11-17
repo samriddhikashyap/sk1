@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+  font-family: 'Fredoka One', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Fredoka One', cursive;
+    font-family: "Segoe UI", sans-serif;
+    background: url(bg.png)no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .container{
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .container img{
+    font-family: 'Fredoka One', cursive;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+  }
+  
+  .container h2{
+    font-family: 'Fredoka One', cursive;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    font-size: 90px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 32px;
+    line-height: 60px;
+  }
+  
+  .container h2 span{
+    font-family: 'Fredoka One', cursive;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 10px;
+  }
+  
+  @media (max-width:800px){
+    .container h2{
+      font-size: 60px;
+      letter-spacing: 19px;
+      line-height: 35px;
+    }
+  
+    .container h2 span{
+      font-family: 'Fredoka One', cursive;
+      font-size: 26px;
+    }
+  }
+        #db{
+            border-radius: 200px;
+            font-family: 'Fredoka One', cursive;
+            width: 1700px;
+            color: #fff;
+            background-color: rgb(1, 1, 65);
+            text-align: center;
+        }
+        h2{
+            color: red;
+            font-family: 'Fredoka One', cursive;
+        }
+
+        .neon {
+            color: #fff;
+            text-shadow:
+            
+              0 0 5px #fff,
+             
+              0 0 20px #fff,
+              0 0 40px #0ff,
+              0 0 80px #0ff,
+              0 0 90px #0ff,
+              0 0 100px #0ff,
+              0 0 150px #0ff;
+          }
+             
+          .neon3 {
+            color: #fff;
+            text-shadow:
+              0 0 5px #fff,
+             
+              0 0 20px #fff,
+              0 0 40px #0ff,
+              0 0 80px #0ff,
+              0 0 90px #0ff,
+              0 0 100px #0ff,
+              0 0 150px #0ff;
+          }
+             
+          .neon2 {
+            color: rgb(253, 0, 0);
+            text-shadow:
+              0 0 5px rgb(255, 0, 0),
+             
+              0 0 20px rgb(202, 0, 0),
+              0 0 40px rgb(255, 0, 0),
+              0 0 80px rgb(255, 64, 0),
+              0 0 90px rgb(255, 0, 0),
+              0 0 100px rgb(201, 104, 104),
+              0 0 150px rgb(255, 0, 0);
+          }
+
+
+          hr{
+            color:  rgb(1, 1, 65);
+          }
+
+
+
+          p{
+            color: red;
+            letter-spacing: 1px;
+            font-size: 15px;
+        }
+        span{
+            letter-spacing: 1px;
+        }
+        #mobilenet{
+            letter-spacing: 2px;
+        }
+        .bottom{
+            color: red;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+            font-family: 'Roboto Slab', serif;
+        }
+        .img{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        b{
+            color: purple;
+        }
+        .first,.second{
+            background-color: white;
+            border-radius: 10px;
+            line-height: 2;
+        }
+        .test_image_and_result1,.test_image_and_result2,.test_image_and_result3,.test_image_and_result4,.test_image_and_result5,.test_image_and_result6,.test_image_and_result7,.test_image_and_result8,.test_image_and_result9{
+            margin-top: 15px;
+            background-color: rgb(155, 153, 153);
+            border-radius: 10px;
+            box-shadow: 1px 1px 25px grey;
+            width:99%;
+            margin-bottom: 15px;
+        }
+        .white1,.white2,.white3,.white4,.white5,.white6,.white7,.white8,.white9{
+            color: white;
+        }
+        span{
+            color: red;
+        }
+        .google_lens{
+            color: black;
+        }
+        h4{
+            color: white;
+            font-weight: bold;
+        }
+             
+        .omini_result{
+          background-color: aquamarine;
+          text-align: center;
+        }
+               
+        #omini_result{
+          background-color: aquamarine;
+          text-align: center;
+        }
+
+        p{
+          color: red;
+          letter-spacing: 1px;
+          font-size: 15px;
+      }
+      span{
+          letter-spacing: 1px;
+      }
+      #mobilenet{
+          letter-spacing: 2px;
+      }
+      .bottom{
+          color: red;
+          position: fixed;
+          bottom: 0;
+          text-align: center;
+          width: 100%;
+          font-family: 'Fredoka One', cursive;
+      }
+      .img{
+          margin-top: 10px;
+          margin-bottom: 10px;
+          height: 300px;
+          border-radius: 10px;
+      }
+      b{
+          color: purple;
+      }
+      .first,.second{
+          background-color: white;
+          border-radius: 10px;
+          line-height: 2;
+      }
+      .test_image_and_result1,.test_image_and_result2,.test_image_and_result3,.test_image_and_result4,.test_image_and_result5,.test_image_and_result6,.test_image_and_result7,.test_image_and_result8,.test_image_and_result9{
+          margin-top: 15px;
+          background-color: rgb(155, 153, 153);
+          border-radius: 10px;
+          box-shadow: 1px 1px 25px grey;
+          width:99%;
+          margin-bottom: 15px;
+      }
+      .white1,.white2,.white3,.white4,.white5,.white6,.white7,.white8,.white9{
+          color: white;
+      }
+      span{
+          color: red;
+      }
+      .google_lens{
+          color: black;
+      }
+      h4{
+          color: white;
+          font-weight: bold;
+      }
+      h5 span{
+          font-weight: bold;
+      }
+      .bottom1{
+        border-radius: 10px;
+        line-height: 2;
+      
+          font-weight: bold;
+          font-size:19px;
+          width: 50%;
+          padding-left: 5px;
+          padding-right: 5px;
+          height: 81;
+          
+      }
